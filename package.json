@@ -1,0 +1,38 @@
+{
+  "name": "@pallad/http-error-mapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compiled/index.js",
+  "types": "compiled/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/pallad-scripts test",
+    "lint": "./node_modules/.bin/pallad-scripts lint",
+    "generate-barrels": "./node_modules/.bin/barrelsby -l all --delete -d ./src",
+    "compile": "npm run generate-barrels && ./node_modules/.bin/pallad-scripts compile"
+  },
+  "files": [
+    "compiled"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallad-ts/http-error-mapper.git"
+  },
+  "author": "Łukasz Kużyński <lukasz.kuzynski@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pallad-ts/http-error-mapper/issues"
+  },
+  "homepage": "https://github.com/pallad-ts/http-error-mapper#readme",
+  "devDependencies": {
+    "@pallad/scripts": "^3.0.2",
+    "barrelsby": "^2.5.1"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "@pallad/app-env": "^3.1.0",
+    "@pallad/builder": "^1.0.1"
+  }
+}
